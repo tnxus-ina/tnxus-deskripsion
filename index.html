@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UrbanThread - Informasi Produk</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0a0a0f;
+  --card:#111118;
+  --accent:#00d4ff;
+  --accent2:#ff00ff;
+  --text:#f5f5f7;
+  --text-dim:#a1a1b3;
+  --success:#22c55e;
+}
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Inter',sans-serif}
+body{background:var(--bg);color:var(--text);overflow-x:hidden}
+
+.top-bar{background:linear-gradient(90deg,var(--accent2),var(--accent));text-align:center;padding:10px;font-size:13px;font-weight:600;letter-spacing:0.5px}
+header{position:sticky;top:0;z-index:100;background:rgba(10,10,15,0.8);backdrop-filter:blur(20px);border-bottom:1px solid rgba(255,255,255,0.06)}
+.nav{max-width:1300px;margin:auto;padding:16px 24px;display:flex;justify-content:space-between;align-items:center}
+.logo{font-size:24px;font-weight:800;background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+
+.container{max-width:1000px;margin:60px auto;padding:0 24px}
+
+.video-section{background:var(--card);border:1px solid rgba(255,255,255,0.06);border-radius:24px;padding:24px;margin-bottom:40px}
+.video-title{font-size:28px;font-weight:700;margin-bottom:16px;text-align:center}
+.video-wrapper{position:relative;width:100%;border-radius:16px;overflow:hidden;background:#000;aspect-ratio:16/9}
+.video-wrapper video{width:100%;height:100%;display:block}
+
+/* Styling control biar nyatu sama tema */
+video::-webkit-media-controls-panel{background:rgba(0,0,0,0.7)}
+video::-webkit-media-controls-play-button{background-color:var(--accent);border-radius:50%}
+
+.desc-section{background:var(--card);border:1px solid rgba(255,255,255,0.06);border-radius:24px;padding:32px}
+.desc-title{font-size:24px;font-weight:700;margin-bottom:16px;background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.desc-text{color:var(--text-dim);font-size:16px;line-height:1.8}
+.desc-text p{margin-bottom:16px}
+.desc-text ul{margin-left:20px;margin-bottom:16px}
+.desc-text li{margin-bottom:8px}
+
+.btn-wa{margin-top:24px;padding:14px 28px;border-radius:12px;background:linear-gradient(90deg,#22c55e,#16a34a);border:none;color:#fff;font-weight:600;cursor:pointer;font-size:16px;display:inline-flex;align-items:center;gap:8px;text-decoration:none;transition:.2s}
+.btn-wa:hover{transform:translateY(-2px);box-shadow:0 10px 30px rgba(34,197,94,0.3)}
+
+footer{background:#05050a;border-top:1px solid rgba(255,255,255,0.06);margin-top:100px}
+.footer-wrap{max-width:1300px;margin:auto;padding:60px 24px;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:40px}
+.footer-col h4{font-size:16px;margin-bottom:14px}
+.footer-col p,.footer-col a{color:var(--text-dim);font-size:14px;line-height:1.8;display:block;margin-bottom:8px;transition:.2s;text-decoration:none}
+.footer-col a:hover{color:var(--accent)}
+.copy{text-align:center;padding:20px;border-top:1px solid rgba(255,255,255,0.06);color:var(--text-dim);font-size:13px}
+
+@media(max-width:768px){
+.container{margin:40px auto;padding:0 16px}
+.video-section{padding:16px}
+.desc-section{padding:20px}
+.video-title{font-size:22px}
+</style>
+</head>
+<body>
+
+<div class="top-bar">🎥 VIDEO INFORMASI | KUALITAS PREMIUM | 100% ORIGINAL</div>
+
+<header>
+  <div class="nav">
+    <div class="logo">UrbanThread</div>
+  </div>
+</header>
+
+<div class="container">
+  <!-- SLOT VIDEO -->
+  <div class="video-section">
+    <h2 class="video-title">Kenapa Pilih UrbanThread?</h2>
+    <div class="video-wrapper">
+      <video controls playsinline>
+        <!-- GANTI LINK VIDEO KAMU DI SINI -->
+        <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        Browser kamu tidak support video tag.
+      </video>
+    </div>
+  </div>
+
+  <!-- DESKRIPSI -->
+  <div class="desc-section">
+    <h3 class="desc-title">Tentang Produk Kami</h3>
+    <div class="desc-text">
+      <p>UrbanThread adalah brand kaos premium lokal yang dibuat khusus untuk anak muda Indonesia. Setiap produk kami melewati quality control ketat sebelum dikirim.</p>
+      
+      <p><strong>Spesifikasi:</strong></p>
+      <ul>
+        <li>Bahan: Cotton Combed 30s premium, adem & tidak gerah</li>
+        <li>Sablon: DTG Digital Printing anti crack & tidak luntur</li>
+        <li>Cutting: Oversize modern, cocok untuk semua bentuk badan</li>
+        <li>Gramasi: 180gsm - tebal tapi tetap nyaman dipakai</li>
+      </ul>
+
+      <p><strong>Keunggulan:</strong></p>
+      <ul>
+        <li>Desain limited edition, tidak diproduksi massal</li>
+        <li>Jahitan rantai di bagian leher biar tidak melar</li>
+        <li>Label woven premium, bukan sablon murahan</li>
+        <li>Packing aman + free stiker eksklusif</li>
+      </ul>
+
+      <p>Punya pertanyaan? Klik tombol di bawah untuk chat admin via WhatsApp. Respon cepat 09:00 - 21:00 WIB.</p>
+      
+      <a href="https://wa.me/6281234567890" target="_blank" class="btn-wa">💬 Chat Admin via WhatsApp</a>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-wrap">
+    <div class="footer-col">
+      <h4>UrbanThread</h4>
+      <p>Brand kaos premium lokal untuk anak muda Indonesia. Kualitas distro, harga bersahabat.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Sosial Media</h4>
+      <a href="https://instagram.com" target="_blank">Instagram @urbanthread.id</a>
+      <a href="https://tiktok.com" target="_blank">TikTok @urbanthread</a>
+      <a href="https://shopee.co.id" target="_blank">Shopee Mall</a>
+    </div>
+    <div class="footer-col">
+      <h4>Komunitas</h4>
+      <a href="#">UrbanThread Community</a>
+      <a href="#">Join Reseller</a>
+      <a href="#">Brand Ambassador</a>
+    </div>
+    <div class="footer-col">
+      <h4>Informasi</h4>
+      <a href="#">Cara Order</a>
+      <a href="#">Kebijakan Retur</a>
+      <a href="#">FAQ</a>
+      <a href="#">Kontak Admin</a>
+    </div>
+  </div>
+  <div class="copy">© 2026 UrbanThread. All Rights Reserved. Made with ❤️ in Indonesia</div>
+</footer>
+
+</body>
+</html>
